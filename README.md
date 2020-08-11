@@ -30,9 +30,9 @@ python run.py --RUN=train --VERSION=${CKPT_NAME} --GPU=${GPU_ID} --SPLIT=${SAMPL
 
 To add：
 
-1. ```--AGCAN_MODE={recon, recon_e}```, ```--AGCAN_MODE=recon``` is for the method displayed in our AAAI 2020 paper and ```--AGCAN_MODE=recon``` is the enhanced re-attention version in our further research.
+1. ```--AGCAN_MODE={recon, recon_e}```, ```--AGCAN_MODE=recon``` is for the method displayed in our AAAI 2020 paper and ```--AGCAN_MODE=recon_e``` is the enhanced re-attention version in our further research.
 
-2. ```--recon_rate=float``` and ```--entropy_tho=${RECON_THRESHOLD}``` are the setup for the re-attention in the AAAI paper and the added gate mechanism in our further version.
+2. ```--recon_rate=float``` and ```--entropy_tho=float``` are the setup for the re-attention in the AAAI paper and the added gate mechanism in our further version.
 
 
 ## Evaluation
