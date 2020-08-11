@@ -1,6 +1,6 @@
-# Pytorch Implementation of Re-Attention
+# Pytorch Implementation of [Re-Attention](https://gyaya.github.io/Files/RE-AAAI2020.pdf)
 ## Introduction
-This repository is Pytorch implementation of [Re-Attention for Visual Question Answering](https://gyaya.github.io/Files/RE-AAAI2020.pdf) in AAAI 2020.
+*This repository is Pytorch implementation of [Re-Attention for Visual Question Answering](https://gyaya.github.io/Files/RE-AAAI2020.pdf) in AAAI 2020.
 
 
 We propose a re-attention framework to utilize the information in answers for the VQA task. 
