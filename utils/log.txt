@@ -1,0 +1,38 @@
+
+ 0 of validation answers were not in the answerkey
+
+NOT USING PER-ANSWER NORMALIZATION
+Accuracy for object_presence is 94.48
+Accuracy for attribute is 51.70
+Accuracy for counting is 0.35
+Accuracy for utility_affordance is 21.05
+Accuracy for sentiment_understanding is 62.62
+Accuracy for color is 68.67
+Accuracy for object_recognition is 85.64
+Accuracy for sport_recognition is 94.42
+Accuracy for positional_reasoning is 26.18
+Accuracy for activity_recognition is 44.07
+Accuracy for scene_recognition is 92.84
+Accuracy for absurd is 97.73
+Arithmetic MPT Accuracy is 61.64
+Harmonic MPT Accuracy is 3.87
+Overall Traditional Accuracy is 79.80
+
+---------------------------------------
+USING PER-ANSWER NORMALIZATION
+Accuracy for object_presence is 94.48
+Accuracy for attribute is 4.15
+Accuracy for counting is 6.25
+Accuracy for utility_affordance is 9.39
+Accuracy for sentiment_understanding is 7.59
+Accuracy for color is 45.38
+Accuracy for object_recognition is 14.57
+Accuracy for sport_recognition is 66.17
+Accuracy for positional_reasoning is 3.52
+Accuracy for activity_recognition is 25.57
+Accuracy for scene_recognition is 25.21
+Accuracy for absurd is 97.73
+Arithmetic N-MPT Accuracy is 33.33
+Harmonic N-MPT Accuracy is 10.63
+Overall Traditional Accuracy is 79.80
+------------------------------------------

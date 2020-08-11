@@ -1,1 +1,48 @@
+# Pytorch Implementation of Re-Attention
+## Introduction
+This repository is Pytorch implementation of [Re-Attention for Visual Question Answering](https://gyaya.github.io/Files/RE-AAAI2020.pdf) in AAAI 2020.
 
+
+We propose a re-attention framework to utilize the information in answers for the VQA task. 
+The framework first learns the initial attention weights for the objects by calculating the similarity 
+of each word-object pair in the feature space. Then, the visual attention map is reconstructed by re-attending 
+the objects in images based on the answer. Through keeping the initial visual attention map and the reconstructed 
+one to be consistent, the learned visual attention map can be corrected by the answer information.
+
+## Prerequisites
+
+* Python 3.5
+* Pytorch ≥ 1.0
+* CUDA 10.0
+
+## Installation
+Thanks for the works of [Vision and Language Group@ MIL](http://mil.hdu.edu.cn/). 
+Our code is based on the implementation of [MCAN](https://github.com/MILVLG/mcan-vqa). 
+Please refer to [here](https://github.com/MILVLG/mcan-vqa) to install the required environment and pre-processed data.
+
+## Training
+
+Train ARN with ground-truth annotation:
+
+```bash
+python run.py --RUN=train --VERSION=${CKPT_NAME} --GPU=${GPU_ID} --SPLIT=${SAMPLE_SPLIT} --MAX_EPOCH=${MAX_EPOCH} --recon_rate=${RECON_RATE} --entropy_tho=${RECON_THRESHOLD} --AGCAN_MODE=${METHOD_TYPE} --DATASET=${DATASET}
+```
+
+## Evaluation
+
+Evaluate ARN with ground-truth annotation:
+
+```bash
+python run.py --RUN=test --CKPT_PATH=${CHECKPOINT_PATH}  --AGCAN_MODE=${METHOD_TYPE} --GPU=${GPU_ID}  --DATASET=${DATASET}
+```
+
+
+## Citation
+
+    @inproceedings{GuoZWYCY20,
+	author    = {Wenya Guo,	Ying Zhang ,Xiaoping Wu, Jufeng Yang, Xiangrui Cai, Xiaojie Yuan},
+	title     = {Re-Attention for Visual Question Answering},
+	booktitle = {The AAAI conference on artificial intelligence (AAAI)},
+	pages     = {91--98},
+	year      = {2020},
+    }
