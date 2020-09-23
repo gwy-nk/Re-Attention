@@ -1,4 +1,4 @@
-# Pytorch Implementation of Re-Attention
+# Pytorch Implementation of Re-Attention for Visual Question Answering
 ## Introduction
 
 We propose a re-attention framework to utilize the information in answers for the VQA task. 
