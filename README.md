@@ -16,7 +16,9 @@ one to be consistent, the learned visual attention map can be corrected by the a
 ## Installation
 Thanks for the works of [Vision and Language Group@ MIL](http://mil.hdu.edu.cn/). 
 Our code is based on the implementation of [MCAN](https://github.com/MILVLG/mcan-vqa). 
-Please refer to [here](https://github.com/MILVLG/mcan-vqa) to install the required environment and pre-processed data.
+We use the Faster R-CNN model pre-trained on the Visual Genome dataset to represent the image as a set of object-level features. 
+For simplicity, you can download the pre-processed data from [here](https://github.com/MILVLG/mcan-vqa). 
+Please refer to [here](https://github.com/MILVLG/mcan-vqa) to install the required environment.
 
 ## Training
 
