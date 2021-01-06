@@ -20,7 +20,7 @@ Please refer to [here](https://github.com/MILVLG/mcan-vqa) to install the requir
 
 ## Training
 
-Train ARN with ground-truth annotation:
+Train re-attention with ground-truth annotation:
 
 ```bash
 python run.py --RUN=train --VERSION=${CKPT_NAME} --GPU=${GPU_ID} --SPLIT=${SAMPLE_SPLIT} --MAX_EPOCH=${MAX_EPOCH} --recon_rate=${RECON_RATE} --entropy_tho=${RECON_THRESHOLD} --AGCAN_MODE=${METHOD_TYPE} --DATASET=${DATASET}
@@ -35,7 +35,7 @@ To add：
 
 ## Evaluation
 
-Evaluate ARN with ground-truth annotation:
+Evaluate re-attention with ground-truth annotation:
 
 ```bash
 python run.py --RUN=test --CKPT_PATH=${CHECKPOINT_PATH}  --AGCAN_MODE=${METHOD_TYPE} --GPU=${GPU_ID}  --DATASET=${DATASET}
